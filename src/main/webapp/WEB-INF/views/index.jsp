@@ -12,7 +12,6 @@
 *{font-family: 'Black Han Sans', sans-serif;}
 a { text-decoration:none } 
 #nav {background:#ccccff; border-radius:30px; width:200px; height:50px; text-shadow:2px 2px 4px #330066; text-align: center; line-height: 50px;}
-#1 {background : #ffcccc; border-radius : 10px;}
 </style>
 </head>
 <body>

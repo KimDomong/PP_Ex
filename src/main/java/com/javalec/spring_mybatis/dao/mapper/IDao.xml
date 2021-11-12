@@ -18,12 +18,17 @@
 	
 	</select>	
 	
+	<select id="totalDao">
+		SELECT COUNT(*) FROM MEMBERLIST 
+	
+	</select>	
+	
 	<delete id="deleteDao">
 		DELETE FROM MEMBERLIST WHERE MID = #{param1}
 	</delete>
 	
 	<update id="modifyDao">
-		UPDATE MEMBERLIST SET MNAME = #{param1}, MPHONE1 = #{param2},MPHONE2 = #{param3},MPHONE1 = #{param4}, MADDRESS = #{param5}, MDATE = #{param6} WHERE mId = #{param7}  
+		UPDATE MEMBERLIST SET MNAME = #{param1}, MPHONE1 = #{param2},MPHONE2 = #{param3},MPHONE3 = #{param4}, MADDRESS = #{param5}, MDATE = #{param6} WHERE mId = #{param7}  
 	</update>
 	
 	

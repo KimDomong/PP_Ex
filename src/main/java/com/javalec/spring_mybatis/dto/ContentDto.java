@@ -4,6 +4,8 @@ package com.javalec.spring_mybatis.dto;
 public class ContentDto {
 
 	private int mId;
+	private int mId2;
+	private int total;
 	private String mName;
 	private String mPhone1;
 	private String mPhone2;
@@ -17,13 +19,15 @@ public class ContentDto {
 	}
 
 
-	public ContentDto(int mId, String mName, String mPhone1,String mPhone2,String mPhone3, String mAddress, String mDate) {
+	public ContentDto(int mId, int mId2, int total, String mName, String mPhone1,String mPhone2,String mPhone3, String mAddress, String mDate) {
 		super();
 		this.mId = mId;
+		this.mId2 = mId2;
+		this.total = total;
 		this.mName = mName;
 		this.mPhone1 = mPhone1;
-		this.mPhone1 = mPhone2;
-		this.mPhone1 = mPhone3;
+		this.mPhone2 = mPhone2;
+		this.mPhone3 = mPhone3;
 		this.mAddress = mAddress;
 		this.mDate = mDate;
 	}
@@ -37,7 +41,24 @@ public class ContentDto {
 	public void setmId(int mId) {
 		this.mId = mId;
 	}
+	
+	public int getmId2() {
+		return mId2;
+	}
 
+
+	public void setmId2(int mId2) {
+		this.mId2 = mId2;
+	}
+
+	public int gettotal() {
+		return total;
+	}
+
+
+	public void settotal(int total) {
+		this.total = total;
+	}
 
 	public String getmName() {
 		return mName;
@@ -59,7 +80,7 @@ public class ContentDto {
 	}
 
 	public String getmPhone2() {
-		return mPhone1;
+		return mPhone2;
 	}
 
 

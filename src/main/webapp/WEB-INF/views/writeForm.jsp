@@ -14,13 +14,16 @@ a { text-decoration:none }
 </style>
 </head>
 <body>
-<table width="800" cellpadding="0" cellspacing="0" border="1">
+	<br>
+<table align="center" width="800" cellpadding="0" cellspacing="0" border="1">
 	<tr>
+		<div align="right"><a  href="index">◀HOME&nbsp; &nbsp; &nbsp; &nbsp;</a></div>
 		<td><h1><center>동호회 회원 관리</center></h1></td>
+		
 	</tr>
 </table>
 <br>
-<table width="800" cellpadding="0" cellspacing="0" border="1">
+<table align="center" width="800" cellpadding="0" cellspacing="0" border="1">
 		<form action="write" method="post">
 			<tr height="30">
 				<td width="100" align="center"> 회 원 이 름 </td>
@@ -45,8 +48,9 @@ a { text-decoration:none }
 				<td width="700">&nbsp; <input type="text" name="mDate"  > </td>
 			</tr>
 			<tr height="50">
-				<td colspan="2" align="right"> <a href="index">되돌아가기</a> &nbsp;&nbsp; <a href="list">회원목록보기</a> &nbsp;&nbsp; 
-				<input type="submit" value="회원입력완료">&nbsp;&nbsp; </td>
+				<td colspan="2" align="right"> 
+				<button type="button" onclick="location.href='list'">회원목록보기</button>&nbsp;&nbsp; 
+				<input type="submit" value="회원입력저장">&nbsp;&nbsp; </td>
 			</tr>
 		</form>
 </table>

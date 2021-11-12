@@ -77,7 +77,7 @@ public class HomeController {
 	@RequestMapping("/write")
 	public String write(HttpServletRequest request, Model model) {
 		IDao dao = sqlSession.getMapper(IDao.class);
-		dao.writeDao(request.getParameter("mName"), request.getParameter("mPhone1"), request.getParameter("mPhone2"), request.getParameter("mPhone3"), request.getParameter("mAddress"), request.getParameter("mDate"));
+		dao.writeDao(request.getParameter("mName"), request.getParameter("mPhone1"), request.getParameter("mPhone2"), request.getParameter("mPhone3"), request.getParameter("mAddress"), request.getParameter("mDate"),request.getParameter("total"));
 		return "redirect:list";
 	}
 	
@@ -93,6 +93,14 @@ public class HomeController {
 	public String delete(HttpServletRequest request, Model model) {
 		IDao dao = sqlSession.getMapper(IDao.class);
 		dao.deleteDao(request.getParameter("mId"));
+		
+		return "redirect:list";
+	}
+	
+	@RequestMapping("/total")
+	public String total(HttpServletRequest request, Model model) {
+		IDao dao = sqlSession.getMapper(IDao.class);
+		dao.totalDao(request.getParameter("total"));
 		
 		return "redirect:list";
 	}
