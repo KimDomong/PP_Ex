@@ -10,7 +10,8 @@
 	
 	
 	<insert id="writeDao">
-		INSERT INTO MEMBERLIST (MID, MNAME, MPHONE1, MPHONE2, MPHONE3, MADDRESS, MDATE) VALUES (MEMBER_SEQ.NEXTVAL, #{param1}, #{param2}, #{param3}, #{param4},#{param5}, #{param6})
+		INSERT INTO MEMBERLIST (MID, MNAME, MPHONE1, MPHONE2, MPHONE3, MADDRESS, MDATE) VALUES 
+		(MEMBER_SEQ.NEXTVAL, #{param1}, #{param2}, #{param3}, #{param4},#{param5}, #{param6})
 	</insert>
 	
 	<select id="viewDao" resultType="com.javalec.spring_mybatis.dto.ContentDto">

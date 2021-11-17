@@ -16,21 +16,21 @@ a { text-decoration:none }
 </head>
 <body>
 <br>
+<table align="center" width="800"><tr align="right"><td><a  href="index" color="#ccccff">◀HOME&nbsp;&nbsp;</a></td></tr></table>
 <table align="center" width="800" cellpadding="0" cellspacing="0" border="1">
 	<tr>
-		<div align="right"><a  href="index" color="#ccccff">◀HOME&nbsp; &nbsp; &nbsp; &nbsp;</a></div>
-		<td><h1><center>동호회 회원 리스트</center></h1></td>
+		<td style="background-color:#ccccff; color:white; text-shadow:2px 2px 4px #330066;"><h1><center>동호회 회원 리스트</center></h1></td>
 	</tr>
 </table>
 <br>
-<table align="center" width="800" cellpadding="0" cellspacing="0" border="1">
-	&nbsp; &nbsp; &nbsp; ※ 회원정보 수정 시 '회원이름' 클릭하여 수정 요망.
-	<tr align="center">
-		<td style="line-height: 30px;">가입번호</td>
-		<td>회원이름</td>
-		<td>전화번호</td>
-		<td>주&nbsp;&nbsp;&nbsp;&nbsp;소</td>
-		<td>가&nbsp;입&nbsp;일</td>
+<table align="center" width="800"><tr align="left"><td>※ 회원정보 수정 시 '회원이름' 클릭하여 수정 요망.</td></tr></table>
+<table align="center" width="800" cellpadding="0" cellspacing="0" border="1">	
+	<tr>
+		<td align="center" style="line-height: 30px;">가입번호</td>
+		<td align="center">회원이름</td>
+		<td align="center">전화번호</td>
+		<td align="center">주&nbsp;&nbsp;&nbsp;&nbsp;소</td>
+		<td align="center">가&nbsp;입&nbsp;일</td>
 	<tr>
 	<c:forEach items="${list}" var="dto">
 	<tr>
@@ -39,7 +39,6 @@ a { text-decoration:none }
 		<td align="center">${dto.mPhone1}&nbsp; - &nbsp;${dto.mPhone2}&nbsp; - &nbsp;${dto.mPhone3}</td>
 		<td>&nbsp; ${dto.mAddress}</td>
 		<td align="center">${dto.mDate}</td>
-		<td align="center">${dto.total}</td>
 	<tr>
 	</c:forEach>
 	<tr>
@@ -51,8 +50,6 @@ a { text-decoration:none }
 		</td>
 	</tr>
 </table>
-<form action="write" method="post">
-<input type="text" name="total" size="10">
-</form>
+
 </body>
 </html>

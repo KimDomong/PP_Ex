@@ -15,12 +15,11 @@ a { text-decoration:none }
 </head>
 <body>
 <br>
+<table align="center" width="800"><tr align="right"><td><a  href="index" color="#ccccff">◀HOME&nbsp;&nbsp;</a><a href="list">◀회원목록보기</a>&nbsp;</td></tr></table>
+
 <table align="center" width="800" cellpadding="0" cellspacing="0" border="1">
 	<tr>
-		<div align="right"><a  href="index" color="#ccccff">◀HOME&nbsp; &nbsp;</a>
-		<a href="list">◀회원목록보기</a>&nbsp; &nbsp; &nbsp;</div>
-		
-		<td align="center"><h1>회원 정보수정</h1></td>
+		<td style="background-color:#ccccff; color:white; text-shadow:2px 2px 4px #330066;"><center><h1>회원 정보수정</h1></center></td>
 	</tr>
 </table>
 <br>

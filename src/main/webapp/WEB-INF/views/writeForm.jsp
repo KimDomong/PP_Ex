@@ -5,6 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>회원정보입력</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
@@ -15,16 +16,16 @@ a { text-decoration:none }
 </head>
 <body>
 	<br>
+<table align="center" width="800"><tr align="right"><td><a  href="index" color="#ccccff">◀HOME&nbsp;&nbsp;</a></td></tr></table>
 <table align="center" width="800" cellpadding="0" cellspacing="0" border="1">
 	<tr>
-		<div align="right"><a  href="index">◀HOME&nbsp; &nbsp; &nbsp; &nbsp;</a></div>
-		<td><h1><center>동호회 회원 관리</center></h1></td>
+		<td style="background-color:#ccccff; color:white; text-shadow:2px 2px 4px #330066;"><h1><center>동호회 회원 관리</center></h1></td>
 		
 	</tr>
 </table>
 <br>
 <table align="center" width="800" cellpadding="0" cellspacing="0" border="1">
-		<form action="write" method="post">
+		<form action="write" method="post" >
 			<tr height="30">
 				<td width="100" align="center"> 회 원 이 름 </td>
 				<td width="700">&nbsp; <input type="text" name="mName" > </td>
